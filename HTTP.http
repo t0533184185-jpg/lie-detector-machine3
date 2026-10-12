@@ -1,0 +1,42 @@
+GET http://localhost:8080/api/persons/get
+Content-Type: application/json
+####
+POST http://localhost:8080/api/persons/delete/112233
+####
+POST http://localhost:8080/api/persons/register
+Content-Type: application/json
+
+{
+  "id": "555555",
+  "userName": "רחלי",
+  "password": "456",
+  "passwordcheck": "456",
+  "email": "rachel@example.com",
+  "phone": "052229446",
+  "age": "23",
+  "role": "משתמש"
+
+}
+###
+POST http://localhost:8080/api/persons/login
+Content-Type: application/json
+
+{ 
+"password":11
+}
+
+###
+GET http://localhost:8080/api/videos/get
+Content-Type: application/json
+
+###
+POST http://localhost:8080/api/videos/add
+Content-Type: application/json
+
+{
+  "id": "123",
+  "name":"מבני נתונים"
+}
+###
+POST http://localhost:8080/api/videos/delete/0
+
